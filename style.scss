@@ -1,0 +1,29 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-container {
+	background-color: red;
+
+	.menu-cont {
+		width: 80px;
+		height: 80px;
+		border: 1px solid white;
+		background-color: white;
+		border-radius: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		svg {
+			width: 80px;
+			height: 40px;
+			fill: red;
+			
+		}
+	}
+}

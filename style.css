@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  background-color: red;
+}
+
+.main-container .menu-cont {
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .menu-cont svg {
+  width: 80px;
+  height: 40px;
+  fill: red;
+}
+/*# sourceMappingURL=style.css.map */
