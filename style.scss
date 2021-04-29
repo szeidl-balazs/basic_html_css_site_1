@@ -8,15 +8,14 @@
 
 $background-color: green;
 $title-color: red;
-$text-color: white;
+$text-color-light: white;
+$text-color-dark: black;
+$hover-color: orange;
 
 	body {
 		background-color: $background-color;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
+
 
 	.main-container {
 
@@ -24,6 +23,18 @@ $text-color: white;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;	
+		
+
+		.color-light {
+			color: $text-color-light;
+		}
+
+		.color-dark {
+			color: $text-color-dark;
+		}
+
+
+
 	}
 
 	.tex-container {
@@ -49,7 +60,29 @@ $text-color: white;
 		font-size: 0.8rem;
 	}
 
+	.button-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.media {
+		display: flex;
+		flex-direction: column;
+	}
 
+	.arrow {
+		border: 1px solid black;
+		width: 30px;
+		height: 30px;
+		border-radius: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			border: 1px solid $hover-color;
+		}
+	}
 
 	.menu-cont {
 		position: absolute;
@@ -91,8 +124,9 @@ $text-color: white;
 		display: inline-block;
 		
 		&:hover {
-			color: orange;
+			color: $hover-color;
 			transform: scale(1.3);
+			stroke: $hover-color;
 		}
 	}
 
